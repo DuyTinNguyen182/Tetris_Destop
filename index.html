@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tetris</title>
+  <link rel="icon" href="Images/tetris.jpg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--<div id="media-pipe" class="media-pipe">mediapipe</div>
+  <div class="instruct">hướng dẫn</div>-->
+  <div id="name">TETRIS</div>
+  <div id="game-over" class="overlay">
+    <div class="game-over-message">
+      <p>Game Over!</p>
+      <button id="game-over-btn">OK</button>
+    </div>
+  </div>
+  
+  <div class="container">
+    <canvas id="board"></canvas>
+    <div class="side-bar">
+      <div>        
+        <p id="text-score">Score: <span id="score">0</span></p>
+        <p id="text-highscore">High Score: <span id="high-score">0</span></p>
+    </div>
+    <div>
+        <p id="text-nextbrick">Next Brick:</p>
+        <canvas id="next-brick"></canvas>
+      </div>
+      <div>
+        <button class="play-btn" id="play">Play</button>
+        <button class="pause-btn" id="pause">Pause</button>
+      </div>      
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+* {
+  font-family: "Fraunces", serif;
+}
+  
+body {
+    background-color: rgb(206, 205, 205);
+}
+
+#name{
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+}
+
+.media-pipe {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  /*z-index: 10;/* Đặt độ ưu tiên để đảm bảo ô này nằm trên các phần tử khác */
+}
+
+.instruct {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  top: 400px;
+  left: 10px;
+  background-color: rgba(255, 255, 0, 0.8);
+  border: 2px solid black;
+  /*z-index: 9;*/
+}
+
+/* Đặt nền mờ phủ toàn màn hình */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tạo hộp thông báo với kích thước nhỏ gọn */
+.game-over-message {
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 300px; /* Chiều rộng cố định */
+}
+
+.game-over-message p {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+#game-over-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+#game-over-btn:hover {
+  background-color: #45a049;
+}
+/*--------*/
+.container {
+  display: grid;
+  grid-template-columns: 320px 240px;
+  justify-content: center;
+  margin-top: 30px;
+}
+  
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+  
+#board {
+  border: 1px solid black;
+}
+  
+#next-brick {
+  border: none none black;
+  margin-bottom: 20px;
+  width: 90;
+  height: 90;
+}
+
+#text-nextbrick{
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#text-score{
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+#text-highscore{
+  color: rgb(255, 0, 0);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.play-btn {
+  background-color: rgb(51, 245, 3);
+  font-size: 15px;
+  padding: 10px 20px;
+  width: 100px;
+  height: 42px;
+  font-weight: bold;  
+  cursor: pointer;
+  border: 1px solid #333;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3), 
+              inset -2px -2px 4px rgb(107, 107, 107);
+  transition: all 0.3s ease;
+}
+
+.play-btn:hover{
+  background-color: rgb(32, 158, 0);
+  color: rgb(255, 255, 255);
+  transform: translateY(-1px);
+}
+
+.pause-btn{
+  background-color: orange;
+  font-size: 15px;
+  padding: 10px 20px;
+  margin-left: 7px;
+  width: 100px;
+  height: 42px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #333;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3), 
+              inset -2px -2px 4px rgb(107, 107, 107);
+  transition: all 0.3s ease;
+}
+
+.pause-btn:hover{
+  background-color: rgb(189, 123, 0);
+  color: rgb(255, 255, 255);
+  transform: translateY(-1px);
+}
